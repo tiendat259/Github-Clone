@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="home-style.css">
+    <!-- Get Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main__content">
+        <!-- Header -->
+        <div class="header">
+            <nav class="header__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="header__button col-md-4">
+                            <a href="home.html" class="header__home" style="text-decoration: none;">
+                                <img src="./assets/images/logo-light.png" alt="Instagram logo" class="logo-light">
+                                <img src="./assets/images/logo-dark.png" alt="Instagram logo" class="logo-dark">
+                            </a>
+                            <!-- <a href="" class="themes__color"><img src="assets/icons/sun.png" alt="" width="24px"></a> -->
+                        </div>
+                        <div class="header__search col-md-4">
+                            <form onsubmit="event.preventDefault();" role="search">
+                                <input id="search" type="search" placeholder="Tìm kiếm" autofocus required />
+                            </form>
+                        </div>
+                        <div class="icon__function col-md-4">
+                            <a href="" class="logo-light"><img src="assets/icons/1946436.png" alt=""></a>
+                            <a href="" class="logo-dark"><img src="assets/icons/home-white.png" alt=""></a>
+                            <a href="" class="logo-light"><img src="assets/icons/send.png" alt=""></a>
+                            <a href="" class="logo-dark"><img src="assets/icons/send-white.png" alt=""></a>
+                            <a href="" class="logo-light"><img src="assets/icons/plus.png" alt=""></a>
+                            <a href="" class="logo-dark"><img src="assets/icons/plus-white.png" alt=""></a>
+                            <a href="" class="logo-light"><img src="assets/icons/heart.png" alt=""></a>
+                            <a href="" class="logo-dark"><img src="assets/icons/heart-white.png" alt=""></a>
+                            <a href="" class="user__button"><img src="assets/icons/avt__profile.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Content -->
+        <div class="main__content">
+            <div class="container">
+                <div class="row">
+                    <div class="content__post col-md-7">
+                        <div class="content__story">
+                            <div class="story__post">
+                                <a href="">
+                                    <img src="assets/icons/default-user.png" alt="">
+                                    <p class=" user__nickname ">
+                                        tiendat.259
+                                    </p>
+                                    <div class="circle__gradient "></div>
+                                </a>
+                            </div>
+                            <div class="story__post ">
+                                <a href="">
+                                    <img src="assets/icons/default-user.png" alt="">
+                                    <p class=" user__nickname ">
+                                        tiendat.259
+                                    </p>
+                                    <div class="circle__gradient "></div>
+                                </a>
+                            </div>
+                            <div class="story__post">
+                                <a href="">
+                                    <img src="assets/icons/default-user.png" alt="">
+                                    <p class=" user__nickname ">
+                                        tiendat.259
+                                    </p>
+                                    <div class="circle__gradient "></div>
+                                </a>
+                            </div>
+                            <div class="story__post ">
+                                <a href="">
+                                    <img src="assets/icons/default-user.png" alt="">
+                                    <p class=" user__nickname ">
+                                        tiendat.259
+                                    </p>
+                                    <div class="circle__gradient "></div>
+                                </a>
+                            </div>
+                            <div class="story__post">
+                                <a href="">
+                                    <img src="assets/icons/default-user.png" alt="">
+                                    <p class=" user__nickname ">
+                                        tiendat.259
+                                    </p>
+                                    <div class="circle__gradient "></div>
+                                </a>
+                            </div>
+                            <!-- <div class="story__post ">
+                                <img src="assets/icons/default-user.png " alt=" ">
+                                <p class="user__nickname">
+                                    tiendat.259
+                                </p>
+                                <div class="circle__gradient"></div>
+                            </div> -->
+                        </div>
+                        <div class="main__content__post">
+                            <div class="card border-0" style="border-radius: 10px;">
+                                <div class="top">
+                                    <div class="user__Details">
+                                        <div class="profile__img">
+                                            <a href=""><img src="assets/icons/avt__profile.jpg" alt=""></a>
+                                        </div>
+                                        <h3>
+                                            <a href="#">tiendat.259</a> <br><span>Hanoi, Vietnam</span></h3>
+                                    </div>
+                                    <div>
+                                        <img src="assets/icons/dots.png" class="dot logo-light" onclick="dotButton()" alt="">
+                                        <img src="assets/icons/dots-white.png" class="dot logo-dark" onclick="dotButton()" alt="">
+                                    </div>
+                                </div>
+                                <div class="img__post">
+                                    <img src="assets/icons/post.png" alt="">
+                                </div>
+                                <div class="actions__button">
+                                    <div class="left">
+                                        <img src="assets/icons/heart.png" alt="" class="heart logo-light" onclick="likeButton()">
+                                        <img src="assets/icons/heart-white.png" alt="" class="heartwhite logo-dark" onclick="likewhiteButton()">
+                                        <img src="assets/icons/chat.png" alt="" class="logo-light">
+                                        <img src="assets/icons/chat-white.png" alt="" class="logo-dark">
+                                        <img src="assets/icons/send.png" alt="" class="logo-light">
+                                        <img src="assets/icons/send-white.png" alt="" class="logo-dark">
+                                    </div>
+                                    <div class="right">
+                                        <img src="assets/icons/bookmark-white.png" class="bookmark logo-light" onclick="bookmarkButton()" alt="">
+                                        <img src="assets/icons/bookmark-full-white.png" class="bookmarkwhite logo-dark" onclick="bookmarkWhiteButton()" alt="">
+                                    </div>
+                                </div>
+                                <h4 class="likes">3,979 lượt thích</h4>
+                                <h4 class="message"><strong><a href="#">tiendat.259</a> </strong>Hello World <span><a href=""> #cards</a></span><span><a href=""> #Html</a></span><span><a href=""> #css</a></span></h4>
+                                <h4 class="comment">Xem tất cả 30 bình luận</h4>
+                                <h4 class="message"><strong><a href="#">vanha.le</a> </strong>Hello!</h4>
+                                <h4 class="time">2 giờ trước</h4>
+                                <div class="add__Comments">
+                                    <div class="userImg">
+                                        <img src="assets/icons/avt__profile.jpg" alt="">
+                                    </div>
+                                    <input type="text" name="" class="text" id="" placeholder="Thêm bình luận...">
+                                    <div class="right comment_Button">
+                                        <a href="">Đăng</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="main__content__post">
+                            <div class="card border-0" style="border-radius: 10px;">
+                                <div class="top">
+                                    <div class="user__Details">
+                                        <div class="profile__img">
+                                            <a href=""><img src="assets/icons/avt__profile.jpg" alt=""></a>
+                                        </div>
+                                        <h3>
+                                            <a href="#">tiendat.259</a> <br><span>Hanoi, Vietnam</span></h3>
+                                    </div>
+                                    <div>
+                                        <img src="assets/icons/dots.png" class="dot logo-light" onclick="dotButton()" alt="">
+                                        <img src="assets/icons/dots-white.png" class="dot logo-dark" onclick="dotButton()" alt="">
+                                    </div>
+                                </div>
+                                <div class="img__post">
+                                    <img src="assets/icons/post.png" alt="">
+                                </div>
+                                <div class="actions__button">
+                                    <div class="left">
+                                        <img src="assets/icons/heart.png" alt="" class="heart logo-light" onclick="likeButton()">
+                                        <img src="assets/icons/heart-white.png" alt="" class="heartwhite logo-dark" onclick="likewhiteButton()">
+                                        <img src="assets/icons/chat.png" alt="" class="logo-light">
+                                        <img src="assets/icons/chat-white.png" alt="" class="logo-dark">
+                                        <img src="assets/icons/send.png" alt="" class="logo-light">
+                                        <img src="assets/icons/send-white.png" alt="" class="logo-dark">
+                                    </div>
+                                    <div class="right">
+                                        <img src="assets/icons/bookmark-white.png" class="bookmark logo-light" onclick="bookmarkButton()" alt="">
+                                        <img src="assets/icons/bookmark-full-white.png" class="bookmarkwhite logo-dark" onclick="bookmarkWhiteButton()" alt="">
+                                    </div>
+                                </div>
+                                <h4 class="likes">3,979 lượt thích</h4>
+                                <h4 class="message"><strong><a href="#">tiendat.259</a> </strong>Hello World <span><a href=""> #cards</a></span><span><a href=""> #Html</a></span><span><a href=""> #css</a></span></h4>
+                                <h4 class="comment">Xem tất cả 30 bình luận</h4>
+                                <h4 class="message"><strong><a href="#">vanha.le</a> </strong>Hello!</h4>
+                                <h4 class="time">2 giờ trước</h4>
+                                <div class="add__Comments">
+                                    <div class="userImg">
+                                        <img src="assets/icons/avt__profile.jpg" alt="">
+                                    </div>
+                                    <input type="text" name="" class="text" id="" placeholder="Thêm bình luận...">
+                                    <div class="right comment_Button">
+                                        <a href="">Đăng</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="main__content__post">
+                            <div class="card border-0" style="border-radius: 10px;">
+                                <div class="top">
+                                    <div class="user__Details">
+                                        <div class="profile__img">
+                                            <a href=""><img src="assets/icons/avt__profile.jpg" alt=""></a>
+                                        </div>
+                                        <h3>
+                                            <a href="#">tiendat.259</a> <br><span>Hanoi, Vietnam</span></h3>
+                                    </div>
+                                    <div>
+                                        <img src="assets/icons/dots.png" class="dot logo-light" onclick="dotButton()" alt="">
+                                        <img src="assets/icons/dots-white.png" class="dot logo-dark" onclick="dotButton()" alt="">
+                                    </div>
+                                </div>
+                                <div class="img__post">
+                                    <img src="assets/icons/post.png" alt="">
+                                </div>
+                                <div class="actions__button">
+                                    <div class="left">
+                                        <img src="assets/icons/heart.png" alt="" class="heart logo-light" onclick="likeButton()">
+                                        <img src="assets/icons/heart-white.png" alt="" class="heartwhite logo-dark" onclick="likewhiteButton()">
+                                        <img src="assets/icons/chat.png" alt="" class="logo-light">
+                                        <img src="assets/icons/chat-white.png" alt="" class="logo-dark">
+                                        <img src="assets/icons/send.png" alt="" class="logo-light">
+                                        <img src="assets/icons/send-white.png" alt="" class="logo-dark">
+                                    </div>
+                                    <div class="right">
+                                        <img src="assets/icons/bookmark-white.png" class="bookmark logo-light" onclick="bookmarkButton()" alt="">
+                                        <img src="assets/icons/bookmark-full-white.png" class="bookmarkwhite logo-dark" onclick="bookmarkWhiteButton()" alt="">
+                                    </div>
+                                </div>
+                                <h4 class="likes">3,979 lượt thích</h4>
+                                <h4 class="message"><strong><a href="#">tiendat.259</a> </strong>Hello World <span><a href=""> #cards</a></span><span><a href=""> #Html</a></span><span><a href=""> #css</a></span></h4>
+                                <h4 class="comment">Xem tất cả 30 bình luận</h4>
+                                <h4 class="message"><strong><a href="#">vanha.le</a> </strong>Hello!</h4>
+                                <h4 class="time">2 giờ trước</h4>
+                                <div class="add__Comments">
+                                    <div class="userImg">
+                                        <img src="assets/icons/avt__profile.jpg" alt="">
+                                    </div>
+                                    <input type="text" name="" class="text" id="" placeholder="Thêm bình luận...">
+                                    <div class="right comment_Button">
+                                        <a href="">Đăng</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="content__suggest col-md-5">
+                        <div class="main__suggest">
+                            <div class="card border-0" style="width:100%">
+                                <div class="user__profile">
+                                    <div class="left">
+                                        <div class="profile__img ">
+                                            <img src="assets/icons/avt__profile.jpg" alt=" ">
+                                        </div>
+                                        <h3>tiendat.259 <br><span>Tiến Đạt</span></h3>
+                                    </div>
+                                    <div class="right">
+                                        <a href=" ">Chuyển</a>
+                                    </div>
+                                </div>
+                                <div class="title__suggest ">
+                                    <div class="left ">
+                                        <h3>Gợi ý cho bạn</h3>
+                                    </div>
+                                    <div class="right ">
+                                        <h3>
+                                            <a href="">Xem tất cả</a> </h3>
+                                    </div>
+                                </div>
+                                <div class="suggest__follow ">
+                                    <ul class="list__follow">
+                                        <li>
+                                            <a href="">
+                                                <div class="left">
+                                                    <img src="assets/icons/default-user.png " alt=" ">
+                                                    <h3>tuantruong.630<br> <span>Theo dõi bạn</span></h3>
+                                                </div>
+                                            </a>
+                                            <div class="right">
+                                                <h3>
+                                                    <a href="">Theo dõi</a>
+                                                </h3>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="left">
+                                                    <img src="assets/icons/default-user.png " alt=" ">
+                                                    <h3>trungkien_123<br> <span>Theo dõi bạn</span></h3>
+                                                </div>
+                                            </a>
+                                            <div class="right">
+                                                <h3>
+                                                    <a href="">Theo dõi</a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="left">
+                                                    <img src="assets/icons/default-user.png " alt=" ">
+                                                    <h3>duyhieu.213<br> <span>Theo dõi bạn</span></h3>
+                                                </div>
+                                            </a>
+                                            <div class="right">
+                                                <h3>
+                                                    <a href="">Theo dõi</a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="left">
+                                                    <img src="assets/icons/default-user.png " alt=" ">
+                                                    <h3>hoanglong_245<br> <span>Theo dõi bạn</span></h3>
+                                                </div>
+                                            </a>
+                                            <div class="right">
+                                                <h3>
+                                                    <a href="">Theo dõi</a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="left">
+                                                    <img src="assets/icons/default-user.png " alt=" ">
+                                                    <h3>haitu_789<br> <span>Theo dõi bạn</span></h3>
+                                                </div>
+                                            </a>
+                                            <div class="right">
+                                                <h3>
+                                                    <a href="">Theo dõi</a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="side-menu__footer">
+                                    <div class="side-menu__footer-links">
+                                        <ul class="side-menu__footer-list">
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#">Giới thiệu</a>
+                                            </li>
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#">Trợ giúp</a>
+                                            </li>
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#">Báo chí</a>
+                                            </li>
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#">API</a>
+                                            </li>
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#">Việc làm</a>
+                                            </li>
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#">Quyền riêng tư</a>
+                                            </li>
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#">Điều khoản</a>
+                                            </li>
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#">Vị trí</a>
+                                            </li>
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#">Từ khóa</a>
+                                            </li>
+                                            <li class="side-menu__footer-item">
+                                                <a class="side-menu__footer-link" href="#" id="darkmode-toggle">Darkmode</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span class="side-menu__footer-copyright">&copy; 2022 instagram from NTDat</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Post more -->
+            <div class="post__more" id="post__more">
+                <ul>
+                    <li>
+                        <a href="" class="red__text">Báo cáo</a>
+                    </li>
+                    <li>
+                        <a href="" class="red__text"> Bỏ theo dõi</a>
+                    </li>
+                    <li>
+                        <a href="">Đi tới bài viết</a>
+                    </li>
+                    <li>
+                        <a href="">Chia sẻ lên...</a>
+                    </li>
+                    <li>
+                        <a href="">Sao chép liên kết</a>
+                    </li>
+                    <li>
+                        <a href="">Nhúng</a>
+                    </li>
+                    <li style="border-bottom: none;">
+                        <a href="">Hủy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+
+        <!-- APP JS -->
+        <script src="./app.js"></script>
+</body>
+
+</html>
+
+</html>
+
+</html>
